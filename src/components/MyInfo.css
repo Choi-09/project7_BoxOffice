@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    background-color: #092532;
+    height:10vh;
+    color: white;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vmin;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: beige;
+    height: 6vh;
+    font-size: 4vmin;
+}
+
+ul {display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #E94560;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px;
+    width: 60vw;
+    margin-top: 50px;
+}
+
+.k,.v{
+    display: inline-block;
+    justify-content: center;
+}
+
+.k {text-align: right;
+    font-weight: bold;
+    width: 50%;
+    font-size: 4vmin;
+    padding-right: 1em;
+    margin: 10px auto;
+    font-family: 'GodoM';
+}
+
+
+.v {
+    text-align: left;
+    font-size: 2.5vmin;
+    padding-right: 5%;
+}
+
+.btn {
+    font-size: 4.5vmin;
+    text-align: center;
+    padding: 2%;
+}
+
+.dislike {
+    padding-left: 5%;
+}
+
+.mvForm { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    margin-top: 20px;
+}
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vmin;
+    height: 6vmin;
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+input[type=text] {
+    display: inline-flex;
+    width: 50vmin;
+    height: 6vmin;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.mvFormList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid gray;
+    width: 60vw;
+    height: 20vh;
+    margin: 20px auto;
+}
+
+.refLi {
+    display: flex;
+    flex-direction: column;
+    
+}
