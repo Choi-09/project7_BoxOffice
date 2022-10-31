@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{ 
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(215, 67, 87), rgb(241,79,58) 59%, rgb(239, 100, 47));
+    height:auto;
+    z-index: 1;
+    color: white;
+    padding: 7px 0px;       
+    font-size: 28px;
+}
+
+.head span {
+    font-size: 16px;
+    display: inline-flex;
+}
+
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+input {
+    width: 30vw;
+    height: 5vh;
+}
+
+.mvlist {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin: auto;
+    padding: 5px 0px;
+    border: 1px solid 
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.mvRank, .mvNm, .popul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vmin;
+}
+
+.mvRank {
+    width: 5vw;
+}
+
+.mvNm {
+    width: 35vw;
+    padding-inline: 10px;
+}
+
+.popul {
+    width: 5vw;
+}
+
+.colNm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin: 10px auto 5px auto;
+    padding: 5px 0px;
+    text-align: left;
+}
+
+.colNm1, .colNm2, .colNm3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.800em;
+}
+
+.colNm1 {
+    width: 5vw;
+    
+}
+
+.colNm2 {
+    width: 35vw;
+    padding-inline: 10px;
+}
+
+.colNm3 {
+    width: 5vw;
+}
+
+.btn_wrap2 {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    min-height: 50px;
+    margin-left: 440px;
+    text-align: center;
+    z-index: 7;
+}
+
+.btn_wrap2 .none { 
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 5px;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 1px 3px 6px 0 rgb(0 0 0 / 30%);
+    border-radius: 50%;
+    font-size: 24px;
+}
+
