@@ -1,4 +1,4 @@
-
+### firebase hosting 주소: https://project7-boxoffice1.web.app
 ### PWA 생성 완료 
 
 # 리액트 총정리
