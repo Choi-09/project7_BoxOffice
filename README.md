@@ -130,8 +130,6 @@
 	3. setViewday(d);		//useState가 반영 되도록 Effect를 준다. (useEffect 함수 안에), yesterday정의 후에.
 	    //위에서 d를 어제날짜로 정의해 놓았으므로 첫페이지에서는 디폴트값으로 어제 날짜가 지정된다.
 
----
-↓ 이후 다시 정리
 ## 12. 선택한 날짜별로 (선택날짜: date) 바꾸기 
 	* (날짜 선택할때마다 바뀌면서 실행해야 하므로) useState Hook 사용
 	1. const[Viewday2, setViewday2] = useState();		// useState: 내용변경하고 싶을때 set이 일어나면 해당부분만 재랜더링 됨. 배열을 반환.
@@ -149,7 +147,6 @@
 		
 	4. (선택날짜:{Viewday2}) //return에서 브라우저 출력.
 	
-	
 ## 13. 첫화면에 영화리스트 출력하기
 
 	1. state변수 선언
@@ -158,14 +155,14 @@
 	2. try-catch 사이에 dailyBoxOfficeList 데려옴 
 	setmvList(
 		   dailyBoxOfficeList.map((item)=> <li key = {item.movieCd}> 		// mvList를 useState변수를 사용하여 배열로 선언했기 때문에 map으로 쓸 수 있음. 원하는데이터를 {} 안에 넣는데 유니크한 키값을 지정해줘야 하기 때문에 모든 배열에 공통으로 들어가있는 movieCd를 키값으로 지정. {} 에 넣는 점 유의. item은 배열 이름을 item으로 준 것.
-                <Link to = {"/mvinfo" + "?mvcd=" + item.movieCd}>   // "/mvinfo" 뒤에 "?mvcd=" 등과 같은 파라미터 원하는대로 설정 후 원하는 데이터 붙인다.
-                    {item.rank}
-                    {item.movieNm}
-                    {item.rankInten > 0 ? '⬆' : item.rankInten < 0? '⬇' : ''}		// map에서는 if조건문 못써서 삼항연산자로 조건걸어준다. rankInten이 0보다 크면 '⬆', 아니면 '⬇', 그 외 나머지는 ''(공백)
-                    {Math.abs(Number(item.rankInten))} // rankInten의 값을 절대값으로 준다.
+                   <Link to = {"/mvinfo" + "?mvcd=" + item.movieCd}>		// "/mvinfo" 뒤에 "?mvcd=" 등과 같은 파라미터 원하는대로 설정 후 원하는 데이터 붙인다.
+                   {item.rank}
+                   {item.movieNm}
+                   {item.rankInten > 0 ? '⬆' : item.rankInten < 0? '⬇' : ''}		// map에서는 if조건문 못써서 삼항연산자로 조건걸어준다. rankInten이 0보다 크면 '⬆', 아니면 '⬇', 그 외 나머지는 ''(공백)
+                   {Math.abs(Number(item.rankInten))}		// rankInten의 값을 절대값으로 준다.
 
-                </Link>		// BoxMv 페이지로 연결하는 링크 설정
-            	</li>)		// li가 여러개니까 각각 key를 줘야함
+		   </Link>		// BoxMv 페이지로 연결하는 링크 설정
+		   </li>)		// li가 여러개니까 각각 key를 줘야함
  
 
 # 영화 상세페이지
